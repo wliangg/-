@@ -23,24 +23,24 @@ F
 True
 true
 
-8 > 7 # §PÂ_ 8 ¬O§_???©ó 7
-8 < 7 # §PÂ_ 8 ¬O§_???©ó 7
-8 >= 7 # §PÂ_ 8 ¬O§_???©óµ¥©ó 7
-8 <= 7 # §PÂ_ 8 ¬O§_???©óµ¥©ó 7
-8 == 7 # §PÂ_ 8 ¬O§_µ¥©ó 7
-8 != 7 # §PÂ_ 8 ¬O§_¤£µ¥©ó 7
-7 %in% c(8, 7) # §PÂ_ 7 ¬O§_¥]§t©ó???­Ó c(8, 7) ¤§¤¤
+8 > 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ 7
+8 < 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ 7
+8 >= 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ç­‰æ–¼ 7
+8 <= 7 # åˆ¤æ–· 8 æ˜¯å¦???æ–¼ç­‰æ–¼ 7
+8 == 7 # åˆ¤æ–· 8 æ˜¯å¦ç­‰æ–¼ 7
+8 != 7 # åˆ¤æ–· 8 æ˜¯å¦ä¸ç­‰æ–¼ 7
+7 %in% c(8, 7) # åˆ¤æ–· 7 æ˜¯å¦åŒ…å«æ–¼???å€‹ c(8, 7) ä¹‹ä¸­
 
 first_name <- "Tony"
 first_name
 class(first_name)
 
-sys_date <- Sys.Date() # ¨t²Î???´Á
-sys_date # ¬Ý°_¨Ó¸ò???¦r¬Û¦P
+sys_date <- Sys.Date() # ç³»çµ±???æœŸ
+sys_date # çœ‹èµ·ä¾†è·Ÿ???å­—ç›¸åŒ
 class(sys_date)
 
-sys_time <- Sys.time() # ¨t²Î®É¶¡
-sys_time # ¬Ý°_¨Ó¸ò???¦r¬Û¦P
+sys_time <- Sys.time() # ç³»çµ±æ™‚é–“
+sys_time # çœ‹èµ·ä¾†è·Ÿ???å­—ç›¸åŒ
 class(sys_time)
 
 my_weight
@@ -81,8 +81,8 @@ is.logical("FALSE")
 is.character("TRUE")
 is.character(TRUE)
 
-inherits(Sys.Date(), what = "Date") # Sys.Date() ¬O???´ÁÃþ«¬
-inherits("1970-01-01", what = "Date") # "1970-01-01" ¬O???¦rÃþ«¬
+inherits(Sys.Date(), what = "Date") # Sys.Date() æ˜¯???æœŸé¡žåž‹
+inherits("1970-01-01", what = "Date") # "1970-01-01" æ˜¯???å­—é¡žåž‹
 
 as.numeric(7L)
 as.numeric(TRUE)

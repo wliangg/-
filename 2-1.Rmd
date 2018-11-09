@@ -1,7 +1,7 @@
 ---
 title: "HW2"
 author: "LIANGW"
-date: "2018¦~10¤ë5¤é"
+date: "2018å¹´10æœˆ5æ—¥"
 output: html_document
 ---
 
@@ -36,20 +36,20 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 seq(from = 3, to = 99, by = 2)
 2:8
 
-# ¨Ï???¥ÎC¨ç¼Æ¶°µ²¤¸¯À
-x <- c(1,2,3,4)  #¼Æ¦r¦V¶q¶q 
+# ä½¿???ç”¨Cå‡½æ•¸é›†çµå…ƒç´ 
+x <- c(1,2,3,4)  #æ•¸å­—å‘é‡é‡ 
 x
 season_1 <- "spring" 
 season_2 <- "summer" 
 season_3 <- "autumn" 
 season_4 <- "winter"
 
-four_seasons <- c("spring", "summer", "autumn", "winter") #¤å¦r¦V¶qfour_seasons
+four_seasons <- c("spring", "summer", "autumn", "winter") #æ–‡å­—å‘é‡four_seasons
 
 rep("2", times = 10) 
 rep("R", times = 10)
 
-seq(from = 1, to = 10, by = 1) #µ¥®t¨ç¼Æ
+seq(from = 1, to = 10, by = 1) #ç­‰å·®å‡½æ•¸
 1:10
 
 
@@ -66,27 +66,27 @@ class(mixed_vars[1])
 class(mixed_vars[2]) 
 class(mixed_vars[3])
 
-#???¤èªk¤@¡G¤¤¬A¸¹·f°t¯Á¤Þ­È
+#???æ–¹æ³•ä¸€ï¼šä¸­æ‹¬è™Ÿæ­é…ç´¢å¼•å€¼
 
 favorite_season <- four_seasons[3] 
 favorite_season
 
-favorite_seasons <- four_seasons[c(-2, -4)] # §Ú³ßÅw¬K¤Ñ©Î¬î¤Ñ 
+favorite_seasons <- four_seasons[c(-2, -4)] # æˆ‘å–œæ­¡æ˜¥å¤©æˆ–ç§‹å¤© 
 favorite_seasons
 
-#???¤èªk¤G¡G§PÂ_¹Bºâ¤l
+#???æ–¹æ³•äºŒï¼šåˆ¤æ–·é‹ç®—å­
 
 my_favorite_season <- four_seasons == "autumn" 
 four_seasons[my_favorite_season]
 
-my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn" # §Ú³ßÅw¬K¤Ñ©Î¬î¤Ñ 
+my_favorite_seasons <- four_seasons == "spring" | four_seasons == "autumn" # æˆ‘å–œæ­¡æ˜¥å¤©æˆ–ç§‹å¤© 
 four_seasons[my_favorite_seasons]
 
 
 numvec<-1:10 # c(1,2,3,4,5,6,7,8,9,10)
 
-numvec+3 # ©Ò¦³¤¸¯À+3 
-numvec*2 # ©Ò¦³¤¸¯À*2
+numvec+3 # æ‰€æœ‰å…ƒç´ +3 
+numvec*2 # æ‰€æœ‰å…ƒç´ *2
 
 numvec1<-1:3 ## c(1,2,3) 
 numvec2<-4:6 ## c(4,5,6) 
@@ -118,13 +118,13 @@ my_mat
 my_mat <- matrix(1:6, nrow = 2) 
 my_mat
 
-#¤èªk¤@¡G¤¤¬A¸¹·f°t¯Á¤Þ­È
+#æ–¹æ³•ä¸€ï¼šä¸­æ‹¬è™Ÿæ­é…ç´¢å¼•å€¼
 
-my_mat[2, 3] # ¿ï¥X¦ì©ó¡]2, 3¡^³o­Ó¦ì¸mªº 6
-my_mat[2, ] # ¿ï¥X©Ò¦³²Ä???¤G¦C¦C¡]2nd row¡^ªº¤¸¯À
-my_mat[, 3] # ¿ï¥X©Ò¦³²Ä¤TÄæÄæ¡]2nd column¡^ªº¤¸¯À
+my_mat[2, 3] # é¸å‡ºä½æ–¼ï¼ˆ2, 3ï¼‰é€™å€‹ä½ç½®çš„ 6
+my_mat[2, ] # é¸å‡ºæ‰€æœ‰ç¬¬???äºŒåˆ—åˆ—ï¼ˆ2nd rowï¼‰çš„å…ƒç´ 
+my_mat[, 3] # é¸å‡ºæ‰€æœ‰ç¬¬ä¸‰æ¬„æ¬„ï¼ˆ2nd columnï¼‰çš„å…ƒç´ 
 
-#¤èªk¤G¡G§PÂ_¹Bºâ¤l
+#æ–¹æ³•äºŒï¼šåˆ¤æ–·é‹ç®—å­
 
 filter <- my_mat < 6 & my_mat > 1 
 my_mat[filter]
@@ -148,10 +148,10 @@ losses <- c(10, 9)
 is_champion <- c(TRUE, FALSE) 
 season <- c("1995-96", "2015-16")
 
-#¤èªk¤@¡GstringsAsFactors = FALSE 
+#æ–¹æ³•ä¸€ï¼šstringsAsFactors = FALSE 
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
 
-#¤èªk¤G:as.character() 
+#æ–¹æ³•äºŒ:as.character() 
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season) 
 great_nba_teams[, 1]<- as.character(great_nba_teams[, 1])
 great_nba_teams[, 5] <- as.character(great_nba_teams[, 5])
@@ -159,21 +159,21 @@ great_nba_teams[, 5] <- as.character(great_nba_teams[, 5])
 
 team_name <- c("Chicago Bulls", "Golden State Warriors") wins <- c(72, 73) losses <- c(10, 9) is_champion <- c(TRUE, FALSE) season <- c("1995-96", "2015-16")
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season)
-#???¤èªk???¤@¡G¤¤¬A¸¹·f°t¯Á¤Þ­È 
-great_nba_teams[1, 1] # ¿ï¥X²Ä???¤@­ÓÅÜ¼Æªº²Ä???¤@­ÓÆ[´ú­È "Chicago Bulls" 
-great_nba_teams[1, ] # ¿ï¥X²Ä???¤@­ÓÆ[´ú­È 
-great_nba_teams[, 1] # ¿ï¥X²Ä???¤@­ÓÅÜ¼Æ
+#???æ–¹æ³•???ä¸€ï¼šä¸­æ‹¬è™Ÿæ­é…ç´¢å¼•å€¼ 
+great_nba_teams[1, 1] # é¸å‡ºç¬¬???ä¸€å€‹è®Šæ•¸çš„ç¬¬???ä¸€å€‹è§€æ¸¬å€¼ "Chicago Bulls" 
+great_nba_teams[1, ] # é¸å‡ºç¬¬???ä¸€å€‹è§€æ¸¬å€¼ 
+great_nba_teams[, 1] # é¸å‡ºç¬¬???ä¸€å€‹è®Šæ•¸
 
-#???¤èªk???¤G¡G¨Ï???¥ÎÅÜ¼Æ¦WºÙ¨Ó¨Ó¿ï¾Ü 
+#???æ–¹æ³•???äºŒï¼šä½¿???ç”¨è®Šæ•¸åç¨±ä¾†ä¾†é¸æ“‡ 
 great_nba_teams[, "season"]
 
-# **???¤èªk¤T¡G¨Ï???¥ÎÅÜ¼Æ¦WºÙ»P$¨Ó¨Ó¿ï¾Ü** 
+# **???æ–¹æ³•ä¸‰ï¼šä½¿???ç”¨è®Šæ•¸åç¨±èˆ‡$ä¾†ä¾†é¸æ“‡** 
 great_nba_teams$team_name
 
-#???¤èªk¥|¡G¨Ï???¥Î§PÂ_¹Bºâ???¤l 
+#???æ–¹æ³•å››ï¼šä½¿???ç”¨åˆ¤æ–·é‹ç®—???å­ 
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE) 
 filter <- great_nba_teams$is_champion == TRUE 
-great_nba_teams[filter, ] # ª`·N³o­Ó³r¸¹
+great_nba_teams[filter, ] # æ³¨æ„é€™å€‹é€—è™Ÿ
 
 
 my_mat <- matrix(1:9, nrow = 3) 
@@ -204,8 +204,8 @@ losses <- c(10, 9)
 is_champion <- c(TRUE, FALSE) 
 season <- c("1995-96", "2015-16")
 great_nba_teams <- data.frame(team_name, wins, losses, is_champion, season, stringsAsFactors = FALSE)
-# §Q¥Î `$ÅÜ¼Æ¦WºÙ`
+# åˆ©ç”¨ `$è®Šæ•¸åç¨±`
 great_nba_teams$is_champion
 
-# §Q¥Î`[, "ÅÜ¼Æ¦WºÙ"]` 
+# åˆ©ç”¨`[, "è®Šæ•¸åç¨±"]` 
 greate_nba_teams[, "is_champion"]

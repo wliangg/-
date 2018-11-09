@@ -1,7 +1,7 @@
 ---
 title: "EX2"
 author: "L.Y. WANG"
-date: "2018¦~10¤ë12¤é"
+date: "2018å¹´10æœˆ12æ—¥"
 output: html_document
 ---
 
@@ -44,18 +44,18 @@ num_vector <- c(11:14, NA)
 sum(11:14, na.rm = TRUE)
 median(11:14, na.rm = TRUE)
 
-flip_results <- c() # «Ø¥ß???­ÓªÅªº¦V¶q¨Ó©ñ¸m¨C???¦¸§ëÂYªºµ²ªG
-coin <- c(TRUE, FALSE) # TRUE ¥Nªí¥¿???¡AFALSE ¥Nªí¤Ï???
-n_flips <- 1 # ±q²Ä???¦¸§ëÂY¶}©l°O¿ý
+flip_results <- c() # å»ºç«‹???å€‹ç©ºçš„å‘é‡ä¾†æ”¾ç½®æ¯???æ¬¡æŠ•æ“²çš„çµæžœ
+coin <- c(TRUE, FALSE) # TRUE ä»£è¡¨æ­£???ï¼ŒFALSE ä»£è¡¨å???
+n_flips <- 1 # å¾žç¬¬???æ¬¡æŠ•æ“²é–‹å§‹è¨˜éŒ„
 while (sum(flip_results) < 3){
- flip_results[n_flips] <- sample(coin, size = 1) # ±N¨C¦¸§ëÂYµ²ªG°O¿ý°_¨Ó
- n_flips <- n_flips + 1 # ·Ç³Æ°O¿ý¤U???¦¸ªº§ëÂYµ²ªG
+ flip_results[n_flips] <- sample(coin, size = 1) # å°‡æ¯æ¬¡æŠ•æ“²çµæžœè¨˜éŒ„èµ·ä¾†
+ n_flips <- n_flips + 1 # æº–å‚™è¨˜éŒ„ä¸‹???æ¬¡çš„æŠ•æ“²çµæžœ
 }
-flip_results # ¦L¥X¨C¦¸§ëÂYªº¬ö¿ý
-length(flip_results) # Á`¦@§ëÂY¤F´X¦¸
+flip_results # å°å‡ºæ¯æ¬¡æŠ•æ“²çš„ç´€éŒ„
+length(flip_results) # ç¸½å…±æŠ•æ“²äº†å¹¾æ¬¡
 
 
-# ???­q¨ç¼Æ
+# ???è¨‚å‡½æ•¸
 circle_calculator <- function(r, is_area){
  area <- pi * r^2
  circum <- 2 * pi * r
@@ -65,12 +65,12 @@ circle_calculator <- function(r, is_area){
  return(circum)
  }
  }
-# ©I¥s¨ç¼Æ
+# å‘¼å«å‡½æ•¸
 circle_calculator(3, is_area = TRUE)
 circle_calculator(3, is_area = FALSE)
 
 
-# ???­q¨ç¼Æ
+# ???è¨‚å‡½æ•¸
 my_length <- function(x){
  counts <- 0
  for (i in x){
@@ -78,13 +78,13 @@ my_length <- function(x){
  }
  return(counts)
  }
-# «Ø¥ß???­Ó¦V¶q
+# å»ºç«‹???å€‹å‘é‡
  my_vec <- seq(from = 15, to = 87, by = 3)
-# ©I¥s¤º«Ø¡]¥~³¡¡^»P???­q¨ç¼Æ
+# å‘¼å«å…§å»ºï¼ˆå¤–éƒ¨ï¼‰èˆ‡???è¨‚å‡½æ•¸
 length(my_vec)
 my_length(my_vec)
 
-# ???­q¨ç¼Æ
+# ???è¨‚å‡½æ•¸
 my_sum <- function(x){
  summation <- 0
  for (i in x){
@@ -92,7 +92,7 @@ my_sum <- function(x){
  }
  return(summation)
  }
-# ©I¥s¤º«Ø»P???­q¨ç¼Æ
+# å‘¼å«å…§å»ºèˆ‡???è¨‚å‡½æ•¸
 sum(1:10)
 my_sum(1:10)
 
@@ -114,6 +114,6 @@ my_mean <- function(input_vector) {
  }
  return(my_sum(input_vector) / my_length(input_vector))
 }
-# ©I¥s???­q¨ç¼Æ
+# å‘¼å«???è¨‚å‡½æ•¸
 my_vector <- c(51, 8, 18, 13, 6, 64)
 my_mean(my_vector)

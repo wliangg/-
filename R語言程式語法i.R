@@ -1,7 +1,7 @@
 ---
 title: "weather"
 author: "L.Y. WANG"
-date: "2018¦~10¤ë12¤é"
+date: "2018å¹´10æœˆ12æ—¥"
 output: html_document
 ---
 
@@ -54,11 +54,11 @@ if (weather == "sunny"){
 
 score<-95
 if(score>=90){
- print("Àu¨q")
+ print("å„ªç§€")
 } else if(score>=60){
-    print("¤Î®æ")
+    print("åŠæ ¼")
 } else{
-    print("¤£¤Î®æ")
+    print("ä¸åŠæ ¼")
  
  
 weather <- sample(c("sunny", "cloudy", "drizzle", "showers", "storm"), size = 1)
@@ -75,19 +75,19 @@ if (weather == "sunny"){
 
 
 
-CHscore<-95 ##°ê???¦¨ÁZ
-ENscore<-55 ##­^???¦¨ÁZ
+CHscore<-95 ##åœ‹???æˆç¸¾
+ENscore<-55 ##è‹±???æˆç¸¾
 if(CHscore>=60){
  if(ENscore>=60){
-    print("¥ş³¡¤Î®æ")
+    print("å…¨éƒ¨åŠæ ¼")
  }else{
-    print("°ê???¤Î®æ¡A­^???¦A¥[ªo")
+    print("åœ‹???åŠæ ¼ï¼Œè‹±???å†åŠ æ²¹")
  }
 }else{
  if(ENscore>=60){
-    print("­^???¤Î®æ¡A°ê???¦A¥[ªo")
+    print("è‹±???åŠæ ¼ï¼Œåœ‹???å†åŠ æ²¹")
  }else{
-    print("¥ş³¡¤£¤Î®æ")
+    print("å…¨éƒ¨ä¸åŠæ ¼")
  }
  
  

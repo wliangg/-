@@ -1,76 +1,35 @@
-R: MySQL
+typeof(87.87)
+class(87.87)
+class("I am a string")
+class(TRUE)
+class(FALSE)
+class(NA)
+class(NULL)
+length(NA)
+length(NULL)
 
-# installing package
-install.packages("RMySQL")
+my_vec <- c(1, 2, 3, NA)
+sum(my_vec, na.rm = TRUE)
+my_vec <- c(1, 2, 3, NULL)
+sum(my_vec)
 
-# library package
-library(DBI)
+sys_time <- Sys.time()
+sys_date <- Sys.Date()
+format(sys_time, "%B %d, %Y")
+format(sys_date, "%A")
+format(sys_date, "%j")
+format(sys_date, "%W")
 
-host <- "rsqltrain.ced04jhfjfgi.ap-northeast-1.rds.amazonaws.com"
-port <- 3306
-dbname <- "nba"
-user <- "trainstudent"
-password <- "csietrain"
-engine <- dbConnect(RMySQL::MySQL(),
-                    host = host,
-                    port = port,
-                    dbname = dbname,
-                    user = user,
-                    password = password
-)
-chicago_bulls <- dbReadTable(engine, name = 'chicago_bulls')
-dbDisconnect(engine)
+class(sys_time)
+class(sys_date)
+class("2018-11-16")
+"2018-11-16" + 1
+sys_date + 1
 
-# Useful functions to examine a data.frame
-class(chicago_bulls)
-View(chicago_bulls)
-head(chicago_bulls)
-tail(chicago_bulls)
-dim(chicago_bulls)
-nrow(chicago_bulls)
-ncol(chicago_bulls)
-summary(chicago_bulls)
-str(chicago_bulls)
-
-# extract partial observations from database
-engine <- dbConnect(RMySQL::MySQL(),
-                    host = host,
-                    port = port,
-                    dbname = dbname,
-                    user = user,
-                    password = password
-
-query_str <- "SELECT * FROM chicago_bulls WHERE Player IN ('Michael Jordan', 'Scottie Pippen', 'Dennis Rodman');"
-trio <- dbGetQuery(engine, query_str)
-
-dim(trio)
-dbDisconnect(engine)
-
-# Extracting Ray Allen, Paul Pierce, Kevin Garnett from boston_celtics
-engine <- dbConnect(RMySQL::MySQL(),
-                    host = host,
-                    port = port,
-                    dbname = dbname,
-                    user = user,
-                    password = password
-)                    
-query_str <- "SELECT * FROM boston_celtics WHERE Player IN ('Ray Allen', 'Paul Pierce', 'Kevin Garnett');"
-trio <- dbGetQuery(engine, query_str)
-dbDisconnect(engine)
-dim(trio)
-
-
-# Extracting Ray Allen, Paul Pierce, Kevin Garnett from boston_celtics
-boston_celtics <- dbReadTable(engine, "boston_celtics")
-dim(boston_celtics)
-is_gap <- boston_celtics$No. %in% c(20, 5, 34)
-gap <- boston_celtics[is_gap, ]
-gap
-query_str <- "SELECT * FROM boston_celtics WHERE Player IN ('Ray Allen', 'Kevin Garnett', 'Paul Pierce');"
-gap <- dbGetQuery(engine, query_str)
-dbDisconnect(engine)
-gap
-
-
-
-
+sys_date - as.numeric(sys_date)
+as.numeric(as.Date("1969-12-31"))
+sys_time - as.numeric(sys_time)
+as.numeric(as.POSIXct("1970-01-01 07:59:59"))
+greenwich_origin <- as.POSIXct("1970-01-01 00:00:00",
+                               tz = "GMT")
+OlsonNames()
